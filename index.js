@@ -17,22 +17,24 @@ app.post("/interaction", urlEncodedParser, (req, res) => {
 });
 app.post("/command", urlEncodedParser, (req, res) => {
   console.log(req.body);
-  res.send([
-    {
-      type: "actions",
-      elements: [
-        {
-          type: "button",
-          text: {
-            type: "plain_text",
-            text: "Button",
-            emoji: true
-          },
-          value: "click_me_123"
-        }
-      ]
-    }
-  ]);
+  res.send({
+    blocks: [
+      {
+        type: "actions",
+        elements: [
+          {
+            type: "button",
+            text: {
+              type: "plain_text",
+              text: "Button",
+              emoji: true
+            },
+            value: "click_me_123"
+          }
+        ]
+      }
+    ]
+  });
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
