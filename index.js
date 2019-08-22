@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const port = process.env.PORT || 3000;
 
-const blocks = require('./blocks.json')
+const blocks = require('./blocks-config.json')
 
 const urlEncodedParser = bodyParser.urlencoded({ extended: false });
 
