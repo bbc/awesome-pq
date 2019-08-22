@@ -12,5 +12,9 @@ app.post("/interaction", (req, res) => {
   console.log(req);
   res.send();
 });
+app.post("/command", (req, res) => {
+  console.log(req);
+  res.send();
+});
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
