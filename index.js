@@ -11,7 +11,7 @@ const handleCommand = (req, res) => {
   });
 };
 
-const sendOptions = async categoryName => {
+const sendOptions = async (categoryName, responseUrl) => {
   try {
     const body = JSON.stringify({
       blocks: suggestions[categoryName],
@@ -43,7 +43,7 @@ const handleInteraction = async (req, res) => {
 
   const allowedOptions = ['eat', 'drink', 'drink-coffee', 'do-things'];
   if (allowedOptions.includes(categoryName)) {
-    await sendOptions(categoryName);
+    await sendOptions(categoryName, responseUrl);
   } else {
     res.status(400).send({
       message: 'Bad option!',
