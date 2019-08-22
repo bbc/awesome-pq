@@ -8,5 +8,9 @@ app.get("/get-awesome-things", (req, res) =>
     hello: "All the things you can do around PQ!"
   })
 );
+app.post("/interaction", (req, res) => {
+  console.log(req);
+  res.send();
+});
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
