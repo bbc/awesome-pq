@@ -22,10 +22,10 @@ app.post("/interaction", urlEncodedParser, (req, res) => {
   console.log(parsedPayload);
 
   const { actions: [{ value }] } = parsedPayload;
-  
+
   switch(value) {
     case 'eat': {
-      req.send({
+      res.send({
         blocks: eat
       })
       break;
