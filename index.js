@@ -1,71 +1,68 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const app = express();
-const port = process.env.PORT || 3000;
-
+const express = require('express');
+const bodyParser = require('body-parser');
 const fetch = require('node-fetch');
 
-const blocks = require('./blocks-config.json')
-const { eat } = require('./suggestions')
+const { blocksConfig } = require('./blocks-config');
+const suggestions = require('./suggestions');
 
+const handleCommand = (req, res) => {
+  res.send({
+    blocks: blocksConfig,
+  });
+};
+
+const sendOptions = async categoryName => {
+  try {
+    const body = JSON.stringify({
+      blocks: suggestions[categoryName],
+    });
+
+    const response = await fetch(responseUrl, {
+      method: 'POST',
+      body,
+    });
+
+    if (response.ok) {
+      console.log('Notification sent!');
+      console.log(body);
+    } else {
+      const msg = `${response.status} - ${response.statusText}`;
+      throw new Error(msg);
+    }
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+const handleInteraction = async (req, res) => {
+  const { payload } = req.body;
+  const {
+    actions: [{ value: categoryName }],
+    response_url: responseUrl,
+  } = JSON.parse(payload);
+
+  const allowedOptions = ['eat', 'drink', 'drink-coffee', 'do-things'];
+  if (allowedOptions.includes(categoryName)) {
+    await sendOptions(categoryName);
+  } else {
+    res.status(400).send({
+      message: 'Bad option!',
+    });
+  }
+};
+
+// Server initialisation.
+const app = express();
+const port = process.env.PORT || 3000;
 const urlEncodedParser = bodyParser.urlencoded({ extended: false });
 
-app.get("/", (req, res) => res.send("Hello World!"));
-app.get("/get-awesome-things", (req, res) =>
+app.get('/', (req, res) => res.send('Hello World!'));
+app.get('/get-awesome-things', (req, res) =>
   res.send({
-    hello: "All the things you can do around PQ!"
+    hello: 'All the things you can do around PQ!',
   })
 );
-app.post("/interaction", urlEncodedParser, (req, res, next) => {
-
-  const { payload } = req.body
-
-  const parsedPayload = JSON.parse(payload);
-  console.log(parsedPayload);
-
-  const { actions: [{ value }], response_url } = parsedPayload;
-
-  switch(value) {
-    case 'eat': {
-      fetch(response_url, {
-        method: 'POST',
-        body: JSON.stringify({
-          blocks: eat
-        })
-      })
-      .then(response => {
-        const msg = `${response.status} - ${response.statusText}`
-        console.log(msg)
-      })
-      .catch(err => {
-        console.error(err);
-      })
-      .finally(() => {
-        next()
-      })
-      break;
-    }
-    case 'drink': {
-
-    }
-    case 'drink-coffee': {
-
-    }
-    case 'do-things': {
-
-    }
-    default:
-      // whoops!
-      return
-  }
-
-  res.send();
-});
-app.post("/command", urlEncodedParser, (req, res) => {
-  console.log(req.body);
-  res.send({
-    blocks
-  });
-});
+app.post('/command', urlEncodedParser, handleCommand);
+app.post('/interaction', urlEncodedParser, handleInteraction);
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
