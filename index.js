@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const app = express();
 const port = process.env.PORT || 3000;
 
+const fetch = require('node-fetch');
+
 const blocks = require('./blocks-config.json')
 const { eat } = require('./suggestions')
 
@@ -14,19 +16,32 @@ app.get("/get-awesome-things", (req, res) =>
     hello: "All the things you can do around PQ!"
   })
 );
-app.post("/interaction", urlEncodedParser, (req, res) => {
+app.post("/interaction", urlEncodedParser, (req, res, next) => {
 
   const { payload } = req.body
 
   const parsedPayload = JSON.parse(payload);
   console.log(parsedPayload);
 
-  const { actions: [{ value }] } = parsedPayload;
+  const { actions: [{ value }], response_url } = parsedPayload;
 
   switch(value) {
     case 'eat': {
-      res.send({
-        blocks: eat
+      fetch(response_url, {
+        method: 'POST',
+        body: JSON.stringify({
+          blocks: eat
+        })
+      })
+      .then(response => {
+        const msg = `${response.status} - ${response.statusText}`
+        console.log(msg)
+      })
+      .catch(err => {
+        console.error(err);
+      })
+      .finally(() => {
+        next()
       })
       break;
     }
