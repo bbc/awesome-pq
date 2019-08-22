@@ -4,6 +4,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 const blocks = require('./blocks-config.json')
+const { eat } = require('./suggestions')
 
 const urlEncodedParser = bodyParser.urlencoded({ extended: false });
 
@@ -18,7 +19,10 @@ app.post("/interaction", urlEncodedParser, (req, res) => {
 
   switch(value) {
     case 'eat': {
-
+      req.send({
+        blocks: eat
+      })
+      break;
     }
     case 'drink': {
 
