@@ -13,7 +13,7 @@ app.post("/interaction", (req, res) => {
   res.send();
 });
 app.post("/command", (req, res) => {
-  console.log(req);
+  console.log(req.body);
   res.send();
 });
 
