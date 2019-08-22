@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const app = express();
 const port = process.env.PORT || 3000;
 
+const blocks = require('./blocks.json')
+
 const urlEncodedParser = bodyParser.urlencoded({ extended: false });
 
 app.get("/", (req, res) => res.send("Hello World!"));
@@ -18,22 +20,7 @@ app.post("/interaction", urlEncodedParser, (req, res) => {
 app.post("/command", urlEncodedParser, (req, res) => {
   console.log(req.body);
   res.send({
-    blocks: [
-      {
-        type: "actions",
-        elements: [
-          {
-            type: "button",
-            text: {
-              type: "plain_text",
-              text: "Button",
-              emoji: true
-            },
-            value: "click_me_123"
-          }
-        ]
-      }
-    ]
+    blocks
   });
 });
 
