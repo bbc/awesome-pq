@@ -16,10 +16,13 @@ app.get("/get-awesome-things", (req, res) =>
 );
 app.post("/interaction", urlEncodedParser, (req, res) => {
 
-  console.log(req.body);
-  
-  const { actions: [{ value }] } = req.body;
+  const { payload } = req.body
 
+  const parsedPayload = JSON.parse(payload);
+  console.log(parsedPayload);
+
+  const { actions: [{ value }] } = parsedPayload;
+  
   switch(value) {
     case 'eat': {
       req.send({
