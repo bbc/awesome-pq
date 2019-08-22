@@ -12,7 +12,7 @@ app.get("/get-awesome-things", (req, res) =>
   })
 );
 app.post("/interaction", urlEncodedParser, (req, res) => {
-  console.log(req);
+  console.log(req.body);
   res.send();
 });
 app.post("/command", urlEncodedParser, (req, res) => {
