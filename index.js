@@ -15,7 +15,10 @@ app.get("/get-awesome-things", (req, res) =>
   })
 );
 app.post("/interaction", urlEncodedParser, (req, res) => {
-  const { actions: { value } } = req.body;
+
+  console.log(req.body);
+  
+  const { actions: [{ value }] } = req.body;
 
   switch(value) {
     case 'eat': {
