@@ -14,7 +14,26 @@ app.get("/get-awesome-things", (req, res) =>
   })
 );
 app.post("/interaction", urlEncodedParser, (req, res) => {
-  console.log(req.body);
+  const { actions: { value } } = req.body;
+
+  switch(value) {
+    case 'eat': {
+
+    }
+    case 'drink': {
+
+    }
+    case 'drink-coffee': {
+
+    }
+    case 'do-things': {
+
+    }
+    default:
+      // whoops!
+      return
+  }
+
   res.send();
 });
 app.post("/command", urlEncodedParser, (req, res) => {
