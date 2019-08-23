@@ -3,44 +3,7 @@ const eat = [
     type: 'section',
     text: {
       type: 'mrkdwn',
-      text: 'We found *205 Hotels* in New Orleans, LA from *12/14 to 12/17*',
-    },
-    accessory: {
-      type: 'overflow',
-      options: [
-        {
-          text: {
-            type: 'plain_text',
-            emoji: true,
-            text: 'Option One',
-          },
-          value: 'value-0',
-        },
-        {
-          text: {
-            type: 'plain_text',
-            emoji: true,
-            text: 'Option Two',
-          },
-          value: 'value-1',
-        },
-        {
-          text: {
-            type: 'plain_text',
-            emoji: true,
-            text: 'Option Three',
-          },
-          value: 'value-2',
-        },
-        {
-          text: {
-            type: 'plain_text',
-            emoji: true,
-            text: 'Option Four',
-          },
-          value: 'value-3',
-        },
-      ],
+      text: 'These are the places you can have dinner tonight: \n',
     },
   },
   {
@@ -51,113 +14,43 @@ const eat = [
     text: {
       type: 'mrkdwn',
       text:
-        '*<fakeLink.toHotelPage.com|Windsor Court Hotel>*\n★★★★★\n$340 per night\nRated: 9.4 - Excellent',
+        '*Paesano Pizza*\n Wood-fired, artisan pizzas from open kitchen in industrial space with wall tiles and sharing tables.',
     },
     accessory: {
       type: 'image',
       image_url:
-        'https://api.slack.com/img/blocks/bkb_template_images/tripAgent_1.png',
-      alt_text: 'Windsor Court Hotel thumbnail',
+        'https://lh5.googleusercontent.com/p/AF1QipNiS5JmN3ZIOhdeK5AnzFEIDXfKkJVM8BGQztmV=w408-h306-k-no',
+      alt_text: 'alt text for image',
     },
-  },
-  {
-    type: 'context',
-    elements: [
-      {
-        type: 'image',
-        image_url:
-          'https://api.slack.com/img/blocks/bkb_template_images/tripAgentLocationMarker.png',
-        alt_text: 'Location Pin Icon',
-      },
-      {
-        type: 'plain_text',
-        emoji: true,
-        text: 'Location: Central Business District',
-      },
-    ],
-  },
-  {
-    type: 'divider',
   },
   {
     type: 'section',
     text: {
       type: 'mrkdwn',
-      text:
-        '*<fakeLink.toHotelPage.com|The Ritz-Carlton New Orleans>*\n★★★★★\n$340 per night\nRated: 9.1 - Excellent',
+      text: '*Lazord Syrian Street Food*\n Lovely Kebabs.',
     },
     accessory: {
       type: 'image',
       image_url:
-        'https://api.slack.com/img/blocks/bkb_template_images/tripAgent_2.png',
-      alt_text: 'Ritz-Carlton New Orleans thumbnail',
+        'https://lh5.googleusercontent.com/p/AF1QipMNmDtora70ph5k2-WD_1wr7ixTTWhPD6lNBfRL=w408-h544-k-no',
+      alt_text: 'alt text for image',
     },
-  },
-  {
-    type: 'context',
-    elements: [
-      {
-        type: 'image',
-        image_url:
-          'https://api.slack.com/img/blocks/bkb_template_images/tripAgentLocationMarker.png',
-        alt_text: 'Location Pin Icon',
-      },
-      {
-        type: 'plain_text',
-        emoji: true,
-        text: 'Location: French Quarter',
-      },
-    ],
-  },
-  {
-    type: 'divider',
   },
   {
     type: 'section',
     text: {
       type: 'mrkdwn',
-      text:
-        '*<fakeLink.toHotelPage.com|Omni Royal Orleans Hotel>*\n★★★★★\n$419 per night\nRated: 8.8 - Excellent',
+      text: '*Silla Korean Restaurant*\n Korean Restaurant.',
     },
     accessory: {
       type: 'image',
       image_url:
-        'https://api.slack.com/img/blocks/bkb_template_images/tripAgent_3.png',
-      alt_text: 'Omni Royal Orleans Hotel thumbnail',
+        'https://lh5.googleusercontent.com/p/AF1QipMYVVPvaEfES_AGw497bLGVptYJ_cj1wkLxqJ9w=w408-h544-k-no',
+      alt_text: 'alt text for image',
     },
   },
   {
-    type: 'context',
-    elements: [
-      {
-        type: 'image',
-        image_url:
-          'https://api.slack.com/img/blocks/bkb_template_images/tripAgentLocationMarker.png',
-        alt_text: 'Location Pin Icon',
-      },
-      {
-        type: 'plain_text',
-        emoji: true,
-        text: 'Location: French Quarter',
-      },
-    ],
-  },
-  {
     type: 'divider',
-  },
-  {
-    type: 'actions',
-    elements: [
-      {
-        type: 'button',
-        text: {
-          type: 'plain_text',
-          emoji: true,
-          text: 'Next 2 Results',
-        },
-        value: 'click_me_123',
-      },
-    ],
   },
 ];
 
