@@ -14,7 +14,7 @@ const eat = [
     text: {
       type: 'mrkdwn',
       text:
-        '*Paesano Pizza*\n Wood-fired, artisan pizzas from open kitchen in industrial space with wall tiles and sharing tables.',
+        '*<https://goo.gl/maps/sB9V5cKXAex|Paesano Pizza>*\n Wood-fired, artisan pizzas from open kitchen in industrial space with wall tiles and sharing tables.',
     },
     accessory: {
       type: 'image',
@@ -27,7 +27,8 @@ const eat = [
     type: 'section',
     text: {
       type: 'mrkdwn',
-      text: '*Lazord Syrian Street Food*\n Lovely Kebabs.',
+      text:
+        '*<https://goo.gl/maps/QHkxVEerf1y|Lazord Syrian Street Food>*\n Lovely Kebabs.',
     },
     accessory: {
       type: 'image',
@@ -40,7 +41,8 @@ const eat = [
     type: 'section',
     text: {
       type: 'mrkdwn',
-      text: '*Silla Korean Restaurant*\n Korean Restaurant.',
+      text:
+        '*<https://goo.gl/maps/NjZTrryyviQsFJ4Y8|Silla Korean Restaurant>*\n Korean Restaurant.',
     },
     accessory: {
       type: 'image',
