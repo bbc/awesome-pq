@@ -1,5 +1,15 @@
 const blocksConfig = [
   {
+    type: 'section',
+    text: {
+        type: 'mrkdwn',
+        text: ':glasgow: Welcome to Awesome PQ, a guide for things to do around Glasgow. Please choose what you are interested in for more details.',
+    }
+  },
+  {
+		type: 'divider',
+	},
+  {
     type: 'actions',
     elements: [
       {
