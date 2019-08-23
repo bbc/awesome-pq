@@ -70,7 +70,7 @@ const drink = [
     text: {
       type: 'mrkdwn',
       text:
-        '[*The Park Bar*](https://goo.gl/maps/mjk4nPHHyQH2)\n Great live music pub, might bump into a star or two...',
+        '*<https://goo.gl/maps/mjk4nPHHyQH2|The Park Bar>*\n Great live music pub, might bump into a star or two...',
     },
     accessory: {
       type: 'image',
