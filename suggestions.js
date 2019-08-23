@@ -85,7 +85,8 @@ const drink = [
     type: 'section',
     text: {
       type: 'mrkdwn',
-      text: '*Old Toll Bar*\n Nice pub with a good selection of drinks.',
+      text:
+        '*<https://goo.gl/maps/VyriwmVuNr62|Old Toll Bar>*\n Nice pub with a good selection of drinks.',
     },
     accessory: {
       type: 'image',
@@ -98,7 +99,8 @@ const drink = [
     type: 'section',
     text: {
       type: 'mrkdwn',
-      text: '*The Ben Nevis*\n Great whisky pub.',
+      text:
+        '*<https://goo.gl/maps/uLL3ZLbo4DH2|The Ben Nevis>*\n Great whisky pub.',
     },
     accessory: {
       type: 'image',
@@ -111,7 +113,7 @@ const drink = [
     type: 'section',
     text: {
       type: 'mrkdwn',
-      text: '*Dukes*\n Nae food, nae faff.',
+      text: '*<https://goo.gl/maps/vNMgWLho4mz|Dukes>*\n Nae food, nae faff.',
     },
     accessory: {
       type: 'image',
@@ -141,7 +143,7 @@ const drink_coffee = [
     text: {
       type: 'mrkdwn',
       text:
-        '*Laboratorio Espresso*\n Small, relaxed outpost serving coffee drinks, sandwiches, hot specials, pastries & baked goods.',
+        '*<https://goo.gl/maps/MWDhZu5DGCs|Laboratorio Espresso>*\n Small, relaxed outpost serving coffee drinks, sandwiches, hot specials, pastries & baked goods.',
     },
     accessory: {
       type: 'image',
@@ -155,7 +157,7 @@ const drink_coffee = [
     text: {
       type: 'mrkdwn',
       text:
-        "*Gordon Street Coffee*\n Great coffee while you're waiting your train.",
+        "*<https://goo.gl/maps/2txZPnaKzWz|Gordon Street Coffee>*\n Great coffee while you're waiting your train.",
     },
     accessory: {
       type: 'image',
@@ -169,7 +171,7 @@ const drink_coffee = [
     text: {
       type: 'mrkdwn',
       text:
-        '*Riverhill Coffee Bar*\n Low-key cafe with bar seating serving sandwiches, hot specials and homemade cakes and pastries.',
+        '*<https://goo.gl/maps/sTq8hVQv4W42|Riverhill Coffee Bar>*\n Low-key cafe with bar seating serving sandwiches, hot specials and homemade cakes and pastries.',
     },
     accessory: {
       type: 'image',
@@ -198,7 +200,7 @@ const do_things = [
     type: 'section',
     text: {
       type: 'mrkdwn',
-      text: '*Ryze*\n Trampoline centre',
+      text: '*<https://goo.gl/maps/1rKE6mWkCj32|Ryze>*\n Trampoline centre',
     },
     accessory: {
       type: 'image',
@@ -211,7 +213,8 @@ const do_things = [
     type: 'section',
     text: {
       type: 'mrkdwn',
-      text: '*Odeon Luxe Glasgow Quay*\n Cinema with fancy seats.',
+      text:
+        '*<https://goo.gl/maps/jGRV4H2yBuF2|Odeon Luxe Glasgow Quay>*\n Cinema with fancy seats.',
     },
     accessory: {
       type: 'image',
@@ -225,7 +228,7 @@ const do_things = [
     text: {
       type: 'mrkdwn',
       text:
-        '*Glasgow Climbing Center (GCC)*\n Traditional wall climbing in a converted church.',
+        '*<https://goo.gl/maps/d8pem3ZPPLk|Glasgow Climbing Center (GCC)>*\n Traditional wall climbing in a converted church.',
     },
     accessory: {
       type: 'image',
@@ -238,7 +241,8 @@ const do_things = [
     type: 'section',
     text: {
       type: 'mrkdwn',
-      text: '*The Climbing Academy (TCA)*\n Bouldering.',
+      text:
+        '*<https://goo.gl/maps/DZdPUzvLWJK2|The Climbing Academy (TCA)>*\n Bouldering.',
     },
     accessory: {
       type: 'image',
@@ -277,7 +281,8 @@ const do_things = [
     type: 'section',
     text: {
       type: 'mrkdwn',
-      text: '*Lighthouse*\n Free tower to view some Glasgow skyline.',
+      text:
+        '*<https://goo.gl/maps/uFLML4k6LBo|Lighthouse>*\n Free tower to view some Glasgow skyline.',
     },
     accessory: {
       type: 'image',
@@ -290,7 +295,8 @@ const do_things = [
     type: 'section',
     text: {
       type: 'mrkdwn',
-      text: '*GOMA*\n If modern arts yer hing.',
+      text:
+        '*<https://goo.gl/maps/qBKnUz8Gfpt|GOMA>*\n If modern arts yer hing.',
     },
     accessory: {
       type: 'image',
