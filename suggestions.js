@@ -138,7 +138,7 @@ const drink_coffee = [
         type: 'section',
         text: {
             type: 'mrkdwn',
-            text: '<https://www.google.com/maps/place/Laboratorio+Espresso/@55.8631453,-4.2569931,17z/data=!3m1!4b1!4m5!3m4!1s0x488844206553c16f:0xff9500f5b2ad33af!8m2!3d55.8631453!4d-4.2547991?shorturl=1|*Laboratorio Espresso*>\n Small, relaxed outpost serving coffee drinks, sandwiches, hot specials, pastries & baked goods.'
+            text: '*Laboratorio Espresso*\n Small, relaxed outpost serving coffee drinks, sandwiches, hot specials, pastries & baked goods.'
         },
         accessory: {
             type: 'image',
@@ -150,7 +150,7 @@ const drink_coffee = [
         type: 'section',
         text: {
             type: 'mrkdwn',
-            text: '<https://www.google.com/maps/place/Gordon+Street+Coffee/@55.8603974,-4.2597939,17z/data=!3m2!4b1!5s0x4888469e9bf337d9:0x57bb9a6ac8eeb865!4m5!3m4!1s0x4888469e6fa2b459:0xd48e6d1e73c09bce!8m2!3d55.8603974!4d-4.2576052|*Gordon Street Coffee*>\n Great coffee while you're waiting your train.'
+            text: '*Gordon Street Coffee*\n Great coffee while you\'re waiting your train.'
         },
         accessory: {
             type: 'image',
@@ -162,7 +162,7 @@ const drink_coffee = [
         type: 'section',
         text: {
             type: 'mrkdwn',
-            text: '<https://www.google.com/maps/place/Riverhill+Coffee+Bar/@55.8604915,-4.2560203,18z/data=!4m6!3m5!1s0x4888469e4eec1c1f:0xcaababf69fa339d6!8m2!3d55.8605596!4d-4.2557933!10e1|*Riverhill Coffee Bar*>\n Low-key cafe with bar seating serving sandwiches, hot specials and homemade cakes and pastries.'
+            text: '*Riverhill Coffee Bar*\n Low-key cafe with bar seating serving sandwiches, hot specials and homemade cakes and pastries.'
         },
         accessory: {
             type: 'image',
