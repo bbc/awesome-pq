@@ -200,97 +200,97 @@ const do_things = [
             alt_text: 'alt text for image',
         },
     },
-    {
-        type: 'section',
-        text: {
-            type: 'mrkdwn',
-            text: '*Odeon Luxe Glasgow Quay*\n Cinema with fancy seats.',
-        },
-        accessory: {
-            type: 'image',
-            image_url:
-                'https://www.odeonevents.co.uk/wp-content/uploads/2017/11/YPS3490GQ8.jpg',
-            alt_text: 'alt text for image',
-        },
-    },
-    {
-        type: 'section',
-        text: {
-            type: 'mrkdwn',
-            text: '*Glasgow Climbing Center (GCC)*\n Traditional wall climbing in a converted church.',
-        },
-        accessory: {
-            type: 'image',
-            image_url:
-                'https://images.itison.com/system/201301/13524/1378882282/original.jpg?w=572&h=378',
-            alt_text: 'alt text for image',
-        },
-    },
-    {
-        type: 'section',
-        text: {
-            type: 'mrkdwn',
-            text: '*The Climbing Academy (TCA)*\n Bouldering.',
-        },
-        accessory: {
-            type: 'image',
-            image_url:
-                'https://images.itison.com/system/201312/28466/1387444634/original.jpg?w=572&h=378',
-            alt_text: 'alt text for image',
-        },
-    },
-    {
-        type: 'section',
-        text: {
-            type: 'mrkdwn',
-            text: '*Bellahouston Dry Ski Slope*\n Dry ski slope.',
-        },
-        accessory: {
-            type: 'image',
-            image_url:
-                'https://media-cdn.tripadvisor.com/media/photo-s/04/b0/b9/9e/getlstd-property-photo.jpg',
-            alt_text: 'alt text for image',
-        },
-    },
-    {
-        type: 'section',
-        text: {
-            type: 'mrkdwn',
-            text: '*Hollywood Bowl*\n Bowling.',
-        },
-        accessory: {
-            type: 'image',
-            image_url:
-                'https://media-cdn.tripadvisor.com/media/photo-s/06/f6/42/36/amf-bowling.jpg',
-            alt_text: 'alt text for image',
-        },
-    },
-    {
-        type: 'section',
-        text: {
-            type: 'mrkdwn',
-            text: '*Lighthouse*\n Free tower to view some Glasgow skyline.',
-        },
-        accessory: {
-            type: 'image',
-            image_url:
-                'http://pagepark.co.uk/wp/wp-content/uploads/2018/01/the-lighthouse-15-1024x698.jpg',
-            alt_text: 'alt text for image',
-        },
-    },
-    {
-        type: 'section',
-        text: {
-            type: 'mrkdwn',
-            text: '*GOMA*\n If modern arts yer hing.',
-        },
-        accessory: {
-            type: 'image',
-            image_url:
-                'https://prodglportalv2.azureedge.net/cache/0/4/8/5/f/3/0485f37faf2e38f0df5b4ba92307ed7c910b567d.jpg',
-            alt_text: 'alt text for image',
-        },
-    },
+    // {
+    //     type: 'section',
+    //     text: {
+    //         type: 'mrkdwn',
+    //         text: '*Odeon Luxe Glasgow Quay*\n Cinema with fancy seats.',
+    //     },
+    //     accessory: {
+    //         type: 'image',
+    //         image_url:
+    //             'https://www.odeonevents.co.uk/wp-content/uploads/2017/11/YPS3490GQ8.jpg',
+    //         alt_text: 'alt text for image',
+    //     },
+    // },
+    // {
+    //     type: 'section',
+    //     text: {
+    //         type: 'mrkdwn',
+    //         text: '*Glasgow Climbing Center (GCC)*\n Traditional wall climbing in a converted church.',
+    //     },
+    //     accessory: {
+    //         type: 'image',
+    //         image_url:
+    //             'https://images.itison.com/system/201301/13524/1378882282/original.jpg?w=572&h=378',
+    //         alt_text: 'alt text for image',
+    //     },
+    // },
+    // {
+    //     type: 'section',
+    //     text: {
+    //         type: 'mrkdwn',
+    //         text: '*The Climbing Academy (TCA)*\n Bouldering.',
+    //     },
+    //     accessory: {
+    //         type: 'image',
+    //         image_url:
+    //             'https://images.itison.com/system/201312/28466/1387444634/original.jpg?w=572&h=378',
+    //         alt_text: 'alt text for image',
+    //     },
+    // },
+    // {
+    //     type: 'section',
+    //     text: {
+    //         type: 'mrkdwn',
+    //         text: '*Bellahouston Dry Ski Slope*\n Dry ski slope.',
+    //     },
+    //     accessory: {
+    //         type: 'image',
+    //         image_url:
+    //             'https://media-cdn.tripadvisor.com/media/photo-s/04/b0/b9/9e/getlstd-property-photo.jpg',
+    //         alt_text: 'alt text for image',
+    //     },
+    // },
+    // {
+    //     type: 'section',
+    //     text: {
+    //         type: 'mrkdwn',
+    //         text: '*Hollywood Bowl*\n Bowling.',
+    //     },
+    //     accessory: {
+    //         type: 'image',
+    //         image_url:
+    //             'https://media-cdn.tripadvisor.com/media/photo-s/06/f6/42/36/amf-bowling.jpg',
+    //         alt_text: 'alt text for image',
+    //     },
+    // },
+    // {
+    //     type: 'section',
+    //     text: {
+    //         type: 'mrkdwn',
+    //         text: '*Lighthouse*\n Free tower to view some Glasgow skyline.',
+    //     },
+    //     accessory: {
+    //         type: 'image',
+    //         image_url:
+    //             'http://pagepark.co.uk/wp/wp-content/uploads/2018/01/the-lighthouse-15-1024x698.jpg',
+    //         alt_text: 'alt text for image',
+    //     },
+    // },
+    // {
+    //     type: 'section',
+    //     text: {
+    //         type: 'mrkdwn',
+    //         text: '*GOMA*\n If modern arts yer hing.',
+    //     },
+    //     accessory: {
+    //         type: 'image',
+    //         image_url:
+    //             'https://prodglportalv2.azureedge.net/cache/0/4/8/5/f/3/0485f37faf2e38f0df5b4ba92307ed7c910b567d.jpg',
+    //         alt_text: 'alt text for image',
+    //     },
+    // },
     {
         type: 'divider',
     },
