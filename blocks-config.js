@@ -46,7 +46,7 @@ const blocksConfig = [
           text: ':bowling:',
           emoji: true,
         },
-        value: 'dothings',
+        value: 'do_things',
       },
     ],
   },

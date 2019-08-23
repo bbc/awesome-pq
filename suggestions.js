@@ -175,7 +175,7 @@ const drink_coffee = [
     }
 ];
 
-const dothings = [
+const do_things = [
     {
         type: 'section',
         text: {
