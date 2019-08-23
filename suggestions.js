@@ -213,19 +213,19 @@ const do_things = [
             alt_text: 'alt text for image',
         },
     },
-    // {
-    //     type: 'section',
-    //     text: {
-    //         type: 'mrkdwn',
-    //         text: '*Glasgow Climbing Center (GCC)*\n Traditional wall climbing in a converted church.',
-    //     },
-    //     accessory: {
-    //         type: 'image',
-    //         image_url:
-    //             'https://images.itison.com/system/201301/13524/1378882282/original.jpg?w=572&h=378',
-    //         alt_text: 'alt text for image',
-    //     },
-    // },
+    {
+        type: 'section',
+        text: {
+            type: 'mrkdwn',
+            text: '*Glasgow Climbing Center (GCC)*\n Traditional wall climbing in a converted church.',
+        },
+        accessory: {
+            type: 'image',
+            image_url:
+                'https://images.itison.com/system/201301/13524/1378882282/original.jpg?w=572&h=378',
+            alt_text: 'alt text for image',
+        },
+    },
     // {
     //     type: 'section',
     //     text: {
