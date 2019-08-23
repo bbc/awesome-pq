@@ -200,19 +200,19 @@ const do_things = [
             alt_text: 'alt text for image',
         },
     },
-    // {
-    //     type: 'section',
-    //     text: {
-    //         type: 'mrkdwn',
-    //         text: '*Odeon Luxe Glasgow Quay*\n Cinema with fancy seats.',
-    //     },
-    //     accessory: {
-    //         type: 'image',
-    //         image_url:
-    //             'https://www.odeonevents.co.uk/wp-content/uploads/2017/11/YPS3490GQ8.jpg',
-    //         alt_text: 'alt text for image',
-    //     },
-    // },
+    {
+        type: 'section',
+        text: {
+            type: 'mrkdwn',
+            text: '*Odeon Luxe Glasgow Quay*\n Cinema with fancy seats.',
+        },
+        accessory: {
+            type: 'image',
+            image_url:
+                'https://i1.wp.com/www.glasgowist.com/wp-content/uploads/2019/05/ODEON-Luxe-Glasgow-Quay_3.jpg?fit=1024%2C683&ssl=1',
+            alt_text: 'alt text for image',
+        },
+    },
     // {
     //     type: 'section',
     //     text: {
