@@ -3,7 +3,7 @@ const blocksConfig = [
     type: 'section',
     text: {
         type: 'mrkdwn',
-        text: 'Welcome to :glasgow:Awesome PQ!:glasgow: A guide for things to do around PQ and Glasgow. Please choose what you are interested in for more details.',
+        text: ':glasgow: Welcome to Awesome PQ :glasgow: A guide for things to do around PQ and Glasgow! \n Please choose what you are interested in for more details.',
     }
   },
   {
