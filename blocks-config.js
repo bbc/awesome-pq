@@ -37,7 +37,7 @@ const blocksConfig = [
           text: ':coffee:',
           emoji: true,
         },
-        value: 'drink-coffee',
+        value: 'drink_coffee',
       },
       {
         type: 'button',
@@ -46,7 +46,7 @@ const blocksConfig = [
           text: ':bowling:',
           emoji: true,
         },
-        value: 'do-things',
+        value: 'do_things',
       },
     ],
   },

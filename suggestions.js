@@ -123,7 +123,182 @@ const drink = [
     },
 ];
 
+const drink_coffee = [
+    {
+        type: 'section',
+        text: {
+            type: 'mrkdwn',
+            text: 'For good coffee around the city, see below:'
+        }
+    },
+    {
+        type: 'divider'
+    },
+    {
+        type: 'section',
+        text: {
+            type: 'mrkdwn',
+            text: '<https://www.google.com/maps/place/Laboratorio+Espresso/@55.8631453,-4.2569931,17z/data=!3m1!4b1!4m5!3m4!1s0x488844206553c16f:0xff9500f5b2ad33af!8m2!3d55.8631453!4d-4.2547991?shorturl=1|*Laboratorio Espresso*>\n Small, relaxed outpost serving coffee drinks, sandwiches, hot specials, pastries & baked goods.'
+        },
+        accessory: {
+            type: 'image',
+            image_url: 'https://archello.s3.eu-central-1.amazonaws.com/images/2016/07/08/Image-1--DO-Architecture.1506081511.4308.jpg',
+            alt_text: 'alt text for image'
+        }
+    },
+    {
+        type: 'section',
+        text: {
+            type: 'mrkdwn',
+            text: '<https://www.google.com/maps/place/Gordon+Street+Coffee/@55.8603974,-4.2597939,17z/data=!3m2!4b1!5s0x4888469e9bf337d9:0x57bb9a6ac8eeb865!4m5!3m4!1s0x4888469e6fa2b459:0xd48e6d1e73c09bce!8m2!3d55.8603974!4d-4.2576052|*Gordon Street Coffee*>\n Great coffee while you're waiting your train.'
+        },
+        accessory: {
+            type: 'image',
+            image_url: 'https://lh5.googleusercontent.com/p/AF1QipMKV3cnxxITIcJdO_Y1PoqFzykXfv9ZhzRDWAnY=w408-h306-k-no',
+            alt_text: 'alt text for image'
+        }
+    },
+    {
+        type: 'section',
+        text: {
+            type: 'mrkdwn',
+            text: '<https://www.google.com/maps/place/Riverhill+Coffee+Bar/@55.8604915,-4.2560203,18z/data=!4m6!3m5!1s0x4888469e4eec1c1f:0xcaababf69fa339d6!8m2!3d55.8605596!4d-4.2557933!10e1|*Riverhill Coffee Bar*>\n Low-key cafe with bar seating serving sandwiches, hot specials and homemade cakes and pastries.'
+        },
+        accessory: {
+            type: 'image',
+            image_url: 'https://lh5.googleusercontent.com/p/AF1QipOFl7pC8qtHDkFY29ywb1gUomWihEndeAnNlGns=w408-h306-k-no',
+            alt_text: 'alt text for image'
+        }
+    },
+    {
+        type: 'divider'
+    }
+];
+
+const do_things = [
+    {
+        type: 'section',
+        text: {
+            type: 'mrkdwn',
+            text: 'These are the places where you can do things tonight: \n',
+        },
+    },
+    {
+        type: 'divider',
+    },
+    {
+        type: 'section',
+        text: {
+            type: 'mrkdwn',
+            text:
+                '*Ryze*\n Trampoline centre',
+        },
+        accessory: {
+            type: 'image',
+            image_url:
+                'https://s3-media3.fl.yelpcdn.com/bphoto/xxRLlCylzTUyT8by3mdyDA/o.jpg',
+            alt_text: 'alt text for image',
+        },
+    },
+    {
+        type: 'section',
+        text: {
+            type: 'mrkdwn',
+            text: '*Odeon Luxe Glasgow Quay*\n Cinema with fancy seats.',
+        },
+        accessory: {
+            type: 'image',
+            image_url:
+                'https://www.odeonevents.co.uk/wp-content/uploads/2017/11/YPS3490GQ8.jpg',
+            alt_text: 'alt text for image',
+        },
+    },
+    {
+        type: 'section',
+        text: {
+            type: 'mrkdwn',
+            text: '*Glasgow Climbing Center (GCC)*\n Traditional wall climbing in a converted church.',
+        },
+        accessory: {
+            type: 'image',
+            image_url:
+                'https://images.itison.com/system/201301/13524/1378882282/original.jpg?w=572&h=378',
+            alt_text: 'alt text for image',
+        },
+    },
+    {
+        type: 'section',
+        text: {
+            type: 'mrkdwn',
+            text: '*The Climbing Academy (TCA)*\n Bouldering.',
+        },
+        accessory: {
+            type: 'image',
+            image_url:
+                'https://images.itison.com/system/201312/28466/1387444634/original.jpg?w=572&h=378',
+            alt_text: 'alt text for image',
+        },
+    },
+    {
+        type: 'section',
+        text: {
+            type: 'mrkdwn',
+            text: '*Bellahouston Dry Ski Slope*\n Dry ski slope.',
+        },
+        accessory: {
+            type: 'image',
+            image_url:
+                'https://media-cdn.tripadvisor.com/media/photo-s/04/b0/b9/9e/getlstd-property-photo.jpg',
+            alt_text: 'alt text for image',
+        },
+    },
+    {
+        type: 'section',
+        text: {
+            type: 'mrkdwn',
+            text: '*Hollywood Bowl*\n Bowling.',
+        },
+        accessory: {
+            type: 'image',
+            image_url:
+                'https://media-cdn.tripadvisor.com/media/photo-s/06/f6/42/36/amf-bowling.jpg',
+            alt_text: 'alt text for image',
+        },
+    },
+    {
+        type: 'section',
+        text: {
+            type: 'mrkdwn',
+            text: '*Lighthouse*\n Free tower to view some Glasgow skyline.',
+        },
+        accessory: {
+            type: 'image',
+            image_url:
+                'http://pagepark.co.uk/wp/wp-content/uploads/2018/01/the-lighthouse-15-1024x698.jpg',
+            alt_text: 'alt text for image',
+        },
+    },
+    {
+        type: 'section',
+        text: {
+            type: 'mrkdwn',
+            text: '*GOMA*\n If modern arts yer hing.',
+        },
+        accessory: {
+            type: 'image',
+            image_url:
+                'https://prodglportalv2.azureedge.net/cache/0/4/8/5/f/3/0485f37faf2e38f0df5b4ba92307ed7c910b567d.jpg',
+            alt_text: 'alt text for image',
+        },
+    },
+    {
+        type: 'divider',
+    },
+];
+
 module.exports = {
     eat,
     drink,
+    drink_coffee,
+    do_things,
 };

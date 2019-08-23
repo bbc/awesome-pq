@@ -44,7 +44,7 @@ const handleInteraction = async (req, res) => {
     response_url: responseUrl,
   } = JSON.parse(payload);
 
-  const allowedOptions = ['eat', 'drink', 'drink-coffee', 'do-things'];
+  const allowedOptions = ['eat', 'drink', 'drink_coffee', 'do_things'];
   if (allowedOptions.includes(categoryName)) {
     await sendOptions(categoryName, responseUrl);
   } else {
