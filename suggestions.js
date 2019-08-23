@@ -239,19 +239,19 @@ const do_things = [
     //         alt_text: 'alt text for image',
     //     },
     // },
-     {
-        type: 'section',
-        text: {
-            type: 'mrkdwn',
-            text: '*Bellahouston Dry Ski Slope*\n Dry ski slope.',
-        },
-        accessory: {
-            type: 'image',
-            image_url:
-                'https://media-cdn.tripadvisor.com/media/photo-s/04/b0/b9/9e/getlstd-property-photo.jpg',
-            alt_text: 'alt text for image',
-        },
-     },
+    //  {
+    //     type: 'section',
+    //     text: {
+    //         type: 'mrkdwn',
+    //         text: '*Bellahouston Dry Ski Slope*\n Dry ski slope.',
+    //     },
+    //     accessory: {
+    //         type: 'image',
+    //         image_url:
+    //             'https://media-cdn.tripadvisor.com/media/photo-s/04/b0/b9/9e/getlstd-property-photo.jpg',
+    //         alt_text: 'alt text for image',
+    //     },
+    //  },
     // {
     //     type: 'section',
     //     text: {
