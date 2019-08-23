@@ -213,45 +213,45 @@ const do_things = [
             alt_text: 'alt text for image',
         },
     },
-    {
-        type: 'section',
-        text: {
-            type: 'mrkdwn',
-            text: '*Glasgow Climbing Center GCC*\n Traditional wall climbing in a converted church.',
-        },
-        accessory: {
-            type: 'image',
-            image_url:
-                'https://images.itison.com/system/201301/13524/1378882282/original.jpg?w=572&h=378',
-            alt_text: 'alt text for image',
-        },
-    },
-    {
-        type: 'section',
-        text: {
-            type: 'mrkdwn',
-            text: '*The Climbing Academy TCA*\n Bouldering.',
-        },
-        accessory: {
-            type: 'image',
-            image_url:
-                'https://images.itison.com/system/201312/28466/1387444634/original.jpg?w=572&h=378',
-            alt_text: 'alt text for image',
-        },
-    },
     // {
     //     type: 'section',
     //     text: {
     //         type: 'mrkdwn',
-    //         text: '*Bellahouston Dry Ski Slope*\n Dry ski slope.',
+    //         text: '*Glasgow Climbing Center (GCC)*\n Traditional wall climbing in a converted church.',
     //     },
     //     accessory: {
     //         type: 'image',
     //         image_url:
-    //             'https://media-cdn.tripadvisor.com/media/photo-s/04/b0/b9/9e/getlstd-property-photo.jpg',
+    //             'https://images.itison.com/system/201301/13524/1378882282/original.jpg?w=572&h=378',
     //         alt_text: 'alt text for image',
     //     },
     // },
+    // {
+    //     type: 'section',
+    //     text: {
+    //         type: 'mrkdwn',
+    //         text: '*The Climbing Academy (TCA)*\n Bouldering.',
+    //     },
+    //     accessory: {
+    //         type: 'image',
+    //         image_url:
+    //             'https://images.itison.com/system/201312/28466/1387444634/original.jpg?w=572&h=378',
+    //         alt_text: 'alt text for image',
+    //     },
+    // },
+     {
+        type: 'section',
+        text: {
+            type: 'mrkdwn',
+            text: '*Bellahouston Dry Ski Slope*\n Dry ski slope.',
+        },
+        accessory: {
+            type: 'image',
+            image_url:
+                'https://media-cdn.tripadvisor.com/media/photo-s/04/b0/b9/9e/getlstd-property-photo.jpg',
+            alt_text: 'alt text for image',
+        },
+     },
     // {
     //     type: 'section',
     //     text: {
