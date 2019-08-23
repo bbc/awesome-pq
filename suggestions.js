@@ -200,45 +200,45 @@ const do_things = [
             alt_text: 'alt text for image',
         },
     },
-    // {
-    //     type: 'section',
-    //     text: {
-    //         type: 'mrkdwn',
-    //         text: '*Odeon Luxe Glasgow Quay*\n Cinema with fancy seats.',
-    //     },
-    //     accessory: {
-    //         type: 'image',
-    //         image_url:
-    //             'https://www.odeonevents.co.uk/wp-content/uploads/2017/11/YPS3490GQ8.jpg',
-    //         alt_text: 'alt text for image',
-    //     },
-    // },
-    // {
-    //     type: 'section',
-    //     text: {
-    //         type: 'mrkdwn',
-    //         text: '*Glasgow Climbing Center (GCC)*\n Traditional wall climbing in a converted church.',
-    //     },
-    //     accessory: {
-    //         type: 'image',
-    //         image_url:
-    //             'https://images.itison.com/system/201301/13524/1378882282/original.jpg?w=572&h=378',
-    //         alt_text: 'alt text for image',
-    //     },
-    // },
-    // {
-    //     type: 'section',
-    //     text: {
-    //         type: 'mrkdwn',
-    //         text: '*The Climbing Academy (TCA)*\n Bouldering.',
-    //     },
-    //     accessory: {
-    //         type: 'image',
-    //         image_url:
-    //             'https://images.itison.com/system/201312/28466/1387444634/original.jpg?w=572&h=378',
-    //         alt_text: 'alt text for image',
-    //     },
-    // },
+    {
+        type: 'section',
+        text: {
+            type: 'mrkdwn',
+            text: '*Odeon Luxe Glasgow Quay*\n Cinema with fancy seats.',
+        },
+        accessory: {
+            type: 'image',
+            image_url:
+                'https://www.odeonevents.co.uk/wp-content/uploads/2017/11/YPS3490GQ8.jpg',
+            alt_text: 'alt text for image',
+        },
+    },
+    {
+        type: 'section',
+        text: {
+            type: 'mrkdwn',
+            text: '*Glasgow Climbing Center GCC*\n Traditional wall climbing in a converted church.',
+        },
+        accessory: {
+            type: 'image',
+            image_url:
+                'https://images.itison.com/system/201301/13524/1378882282/original.jpg?w=572&h=378',
+            alt_text: 'alt text for image',
+        },
+    },
+    {
+        type: 'section',
+        text: {
+            type: 'mrkdwn',
+            text: '*The Climbing Academy TCA*\n Bouldering.',
+        },
+        accessory: {
+            type: 'image',
+            image_url:
+                'https://images.itison.com/system/201312/28466/1387444634/original.jpg?w=572&h=378',
+            alt_text: 'alt text for image',
+        },
+    },
     // {
     //     type: 'section',
     //     text: {
