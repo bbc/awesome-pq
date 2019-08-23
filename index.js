@@ -14,7 +14,10 @@ const handleCommand = (req, res) => {
 const sendOptions = async (categoryName, responseUrl) => {
   try {
     const body = JSON.stringify({
-      blocks: suggestions[categoryName],
+      blocks: {
+        ...blocksConfig,
+        ...suggestions[categoryName],
+      },
     });
 
     const response = await fetch(responseUrl, {
